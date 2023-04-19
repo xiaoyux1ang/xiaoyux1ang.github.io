@@ -142,10 +142,12 @@
                     />
                   </td>
                   <td valign="middle" width="75%">
+                    <a href="http://raywzy.com/NDRF/">
                     <papertitle>
                       Learning Neural Duplex Radiance Fields for Real-Time View
                       Synthesis
                     </papertitle>
+                    </a>
 
                     <br />
                     <a href="http://raywzy.com/">Ziyu Wan</a>,
@@ -173,45 +175,129 @@
                     <a href="">[Project Page]</a>
                     <a href="">[Video]</a>
                     <!-- <a href="./papers/2022_FDNeRF/zhang2022fdnerf.bib">[Bibtex]</a> -->
-                    <p></p>
+                    <p>
+                      Represent scenes as neural radiance features encoded on a two-layer <strong>duplex</strong> mesh, overcoming inaccuracies in 3D surface reconstruction.
+                    </p>
                   </td>
                 </tr>
 
-                <!-- <tr>
+                <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
-                    <img
-                      src="images/prl.jpg"
-                      alt="prl"
-                      width="160"
-                      height="160"
-                    />
+                    <div class="one">
+                      <div class="two" id="pnf_image" style="opacity: 0">
+                        <img src="images/grl_img_019_grl.png" width="180" />
+                      </div>
+                      <img src="images/grl_img_019_lr.png" width="180" />
+                    </div>
+                    <script type="text/javascript">
+                      function pnf_start() {
+                        document.getElementById("pnf_image").style.opacity =
+                          "1";
+                      }
+
+                      function pnf_stop() {
+                        document.getElementById("pnf_image").style.opacity =
+                          "0";
+                      }
+                      pnf_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle">
+                    <a href="TODO">
+                      <papertitle>
+                      Efficient and Explicit Modelling of Image Hierarchies for
+                      Image Restoration
+                    </papertitle>
+
+                    <br />
+                    <a href="https://ofsoundof.github.io/">Yawei Li</a>,
+                    <a href="https://ychfan.github.io/">Yuchen Fan</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://www.linkedin.com/in/demandolx"
+                      >Denis Demandolx</a
+                    >,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/"
+                      >Rakesh Ranjan</a
+                    >,
+                    <a
+                      href="https://www.informatik.uni-wuerzburg.de/computervision/home/"
+                      >Radu Timofte</a
+                    >,
+                    <a
+                      href="https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html"
+                      >Luc Van Gool</a
+                    >
+                    <br />
+                    <em
+                      >IEEE Conference on Computer Vision and Pattern
+                      Recognition (<strong>CVPR</strong>), 2023</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/abs/2303.00748">[PDF]</a>
+                    <a href="https://github.com/ofsoundof/GRL-Image-Restoration"
+                      >[Code]</a
+                    >
+                    <p>
+                      Providing a mechanism to efficiently and explicitly model image hierarchies in the global, regional, and local range for image restoration.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="stdan_stop()" onmouseover="stdan_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="stdan_image" style="opacity: 0">
+                        <img src="images/stdan_deform.png" width="180" />
+                      </div>
+                      <img src="images/stdan_fixed.png" width="180" />
+                    </div>
+                    <script type="text/javascript">
+                      function stdan_start() {
+                        document.getElementById("stdan_image").style.opacity =
+                          "1";
+                      }
+
+                      function stdan_stop() {
+                        document.getElementById("stdan_image").style.opacity =
+                          "0";
+                      }
+                      stdan_stop();
+                    </script>
                   </td>
                   <td width="75%" valign="middle">
                     <a
-                      href="https://drive.google.com/file/d/13rVuJpcytRdLYCnKpq46g7B7IzSrPQ2P/view?usp=sharing"
+                      href="https://ieeexplore.ieee.org/abstract/document/10045744"
                     >
                       <papertitle
-                        >Parallelizing Reinforcement Learning</papertitle
+                        >STDAN: deformable attention network for space-time video super-resolution</papertitle
                       >
                     </a>
                     <br />
-                    <strong>Jonathan T. Barron</strong>,
-                    <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a
+                    <a href="https://littlewhitesea.github.io/">Hai Wang</a
                     >,
-                    <a href="http://www.cs.berkeley.edu/~nickjhay/"
-                      >Nicholas J. Hay</a
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://www.yapengtian.com/"
+                      >Yapeng Tian</a
+                    >,
+                    <a href="https://www.sigs.tsinghua.edu.cn/ywm_en/main.htm"
+                      >Wenming Yang</a
+                    >,
+                    <a href="https://dblp.org/pid/13/322.html"
+                      >Qingmin Liao</a
                     >
                     <br />
-                    <em>Technical Report</em>, 2009
+                    <em>IEEE Transactions on Neural Networks and Learning Systems (<strong>TNNLS</strong>)</em>, 2023
                     <br />
-                    <a href="data/BarronPRL2009.bib">bibtex</a>
+                    <a href="https://arxiv.org/abs/2203.06841">[PDF]</a>
+                    <a href="https://github.com/littlewhitesea/STDAN"
+                      >[Code]</a
+                    >
+                    <!-- <a href="data/BarronPRL2009.bib">bibtex</a> -->
                     <p>
-                      Markov Decision Problems which lie in a low-dimensional
-                      latent space can be decomposed, allowing modified RL
-                      algorithms to run orders of magnitude faster in parallel.
+                      A deformable attention network that adaptively captures and aggregates spatial and temporal contexts in dynamic video to enhance reconstruction. 
                     </p>
                   </td>
-                </tr> -->
+                </tr>
 
                 <!-- <tr
                   onmouseout="zipnerf_stop()"
