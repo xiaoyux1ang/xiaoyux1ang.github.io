@@ -47,10 +47,10 @@
                       <name>Xiaoyu Xiang | 向小雨</name>
                     </p>
                     <p>
-                      I am a senior research scientist at
+                      I am a staff research scientist at
                       <a href="https://about.meta.com/realitylabs/"
                         >Meta Reality Labs</a
-                      >, where I work on computer vision and deep learning.
+                      >, where I work on 3D Computer Vision and Generative-AI research for AR and VR.
                     </p>
                     <p>
                       I did my Ph.D. at
@@ -84,11 +84,11 @@
                     </p>
                   </td>
                   <td style="padding: 2.5%; width: 40%; max-width: 40%">
-                    <a href="images/XiaoyuXiang.jpeg"
+                    <a href="images/xiaoyuxiang.JPG"
                       ><img
                         style="width: 100%; max-width: 100%"
                         alt="profile photo"
-                        src="images/XiaoyuXiang.jpeg"
+                        src="images/xiaoyuxiang.JPG"
                         class="hoverZoomLink"
                     /></a>
                   </td>
@@ -132,6 +132,144 @@
               "
             >
               <tbody>
+                <tr>
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <img
+                      src="images/garment3dgen.gif"
+                      alt="prl"
+                      width="180"
+                      height="102"
+                    />
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://nsarafianos.github.io/garment3dgen">
+                    <papertitle>
+                      Garment3DGen: 3D Garment Stylization and Texture Generation
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>,
+                    <a href="https://tuurstuyck.github.io/">Tuur Stuyck</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    Yilei Li, 
+                    <a href="https://www.linkedin.com/in/jovan-cmu/"
+                      >Jovan Popovic</a
+                    >,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/"
+                      >Rakesh Ranjan</a
+                    >
+                    <br />
+                    <em
+                      >arXiv, 2024</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/abs/2403.18816">[Paper]</a>
+                    <a href="https://nsarafianos.github.io/assets/garment3dgen/supp.pdf">[Suppl]</a>
+                    <a href="https://github.com/nsarafianos/Garment3DGen">[Code]</a>
+                    <a href="https://nsarafianos.github.io/garment3dgen">[Project Page]</a>
+                    <a href="https://nsarafianos.github.io/assets/garment3dgen/video.mp4">[Video]</a>
+                    <a href="https://github.com/facebookresearch/DiffAvatar">[Data]</a>
+                    <p>
+                      Garment3DGen stylizes the geometry and textures of real and fantastical garments that we can fit on top of parametric bodies and simulate.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="platonerf_stop()" onmouseover="platonerf_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="platonerf_image" style="opacity: 0">
+                        <img src="images/platonerf_out.gif" width="180" />
+                      </div>
+                      <img src="images/platonerf_in.png" width="180" />
+                    </div>
+                    <script type="text/javascript">
+                      function platonerf_start() {
+                        document.getElementById("platonerf_image").style.opacity =
+                          "1";
+                      }
+
+                      function platonerf_stop() {
+                        document.getElementById("platonerf_image").style.opacity =
+                          "0";
+                      }
+                      platonerf_stop();
+                    </script>
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://platonerf.github.io/">
+                    <papertitle>
+                      PlatoNeRF: 3D Reconstruction in Plato's Cave via Single-View Two-Bounce Lidar
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://tzofi.github.io/">Tzofi Klinghoffer</a>,
+                    <strong>Xiaoyu Xiang*</strong>,
+                    <a href="https://sidsoma.github.io/">Siddharth Somasundaram*</a>,
+                    <a href="https://ychfan.github.io/">Yuchen Fan</a>,
+                    <a href="https://richardt.name/">Christian Richardt</a>,
+                    <a href="https://www.media.mit.edu/people/raskar/overview/">Ramesh Raskar</a>,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>
+                    <br />
+                    <em
+                      >IEEE Conference on Computer Vision and Pattern
+                      Recognition (<strong>CVPR</strong>), 2024 <strong>(Oral, Best Paper Award Finalist)</strong></em
+                    >
+                    <br />
+                    <a href="https://platonerf.github.io/assets/PlatoNeRF.pdf">[Paper]</a>
+                    <a href="https://github.com/facebookresearch/PlatoNeRF">[Code]</a>
+                    <a href="https://youtu.be/tNdPlGUsCPw?si=gfEWcazENyMgvbyb">[Video]</a>
+                    <a href="https://github.com/facebookresearch/PlatoNeRF/releases/tag/v0">[Dataset]</a>
+                    <p>
+                      A method to recover scene geometry from a single view using two-bounce signals captured by a single-photon lidar. 
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <img
+                      src="images/unsamflow.gif"
+                      alt="prl"
+                      width="180"
+                      height="164"
+                    />
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yuan_UnSAMFlow_Unsupervised_Optical_Flow_Guided_by_Segment_Anything_Model_CVPR_2024_paper.pdf">
+                    <papertitle>
+                      UnSAMFlow: Unsupervised Optical Flow Guided by Segment Anything Model
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://shuaiyuan1996.github.io/home/">Shuai Yuan</a>,
+                    <a href="https://openreview.net/profile?id=~Lei_Luo8">Lei Luo</a>,
+                    <a href="https://huizhuo1987.github.io/">Zhuo Hui</a>,
+                    <a href="https://acl.mit.edu/people/pucan">Can Pu</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>,
+                    <a href="https://www.linkedin.com/in/demandolx/">Denis Demandolx</a>,
+                    <br />
+                    <em
+                      >IEEE Conference on Computer Vision and Pattern
+                      Recognition (<strong>CVPR</strong>), 2024</em
+                    >
+                    <br />
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yuan_UnSAMFlow_Unsupervised_Optical_Flow_Guided_by_Segment_Anything_Model_CVPR_2024_paper.pdf">[Paper]</a>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/supplemental/Yuan_UnSAMFlow_Unsupervised_Optical_CVPR_2024_supplemental.pdf">[Appendix]</a>
+                    <a href="https://github.com/facebookresearch/UnSAMFlow">[Code]</a>
+                    <a href="https://shuaiyuan1996.github.io/home/publications/yuan2024unsamflow_poster.pdf">[Poster]</a>
+                    <a href="https://www.youtube.com/watch?v=3_g63TFk60g">[Video]</a>
+                    <a href="./data/yuan2024unsamflow.bib">[BibTex]</a>
+                    <p>
+                      An unsupervised flow network that leverages object information from the latest foundation model Segment Anything Model (SAM).
+                    </p>
+                  </td>
+                </tr>
+
                 <tr>
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
                     <img
@@ -445,12 +583,12 @@
                       <strong>Organizer</strong>:
                       <a href="https://cv4mr.github.io/"
                         >Computer Vision for Mixed Reality Workshop</a
-                      >, CVPR 2023
+                      >, CVPR 2023, 2024
                     </p>
                     <p>
                       <strong>Conference Reviewer</strong>: ICLR 2021-2022, CVPR
-                      2021-2023, ICCV 2021-2023, ECCV 2022, NeurIPS 2021-2023,
-                      ICML 2022, WACV 2022-2023
+                      2021-2024, ICCV 2021-2023, ECCV 2022-2024, NeurIPS 2021-2023,
+                      ICML 2022, SIGGRAPH 2024, SIGGRAPH-Asia 2024, WACV 2022-2025
                     </p>
                     <p>
                       <strong>Journal Reviewer</strong>: T-PAMI, TNNLS, TMM,
