@@ -260,7 +260,7 @@
                     <a href="https://pages.cs.wisc.edu/~yunyang/">Yunyang Xiong</a>,
                     <a href="https://www.linkedin.com/in/balakrishnan-varadarajan-017b834/">Bala Varadarajan*</a>,
                     <a href="https://github.com/klightz/">Lemeng Wu*</a>,
-                    <strong>Xiaoyu Xiang*</strong>,
+                    <strong>Xiaoyu Xiang</strong>,
                     <a href="https://fanyix.cs.ucdavis.edu/">Fanyi Xiao</a>,
                     <a href="https://sites.google.com/andrew.cmu.edu/zcckernel">Chenchen Zhu</a>,
                     <a href="https://sites.google.com/view/xiaoliangdai/">Xiaoliang Dai</a>,
@@ -401,6 +401,57 @@
                   </td>
                 </tr>
 
+                <tr onmouseout="squeezesam_stop()" onmouseover="squeezesam_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="squeezesam_image" style="opacity: 0">
+                        <img src="images/squeezesam_out.gif" width="180" />
+                      </div>
+                      <img src="images/squeezesam_in.jpg" width="180" />
+                    </div>
+                    <script type="text/javascript">
+                      function squeezesam_start() {
+                        document.getElementById("squeezesam_image").style.opacity =
+                          "1";
+                      }
+
+                      function squeezesam_stop() {
+                        document.getElementById("squeezesam_image").style.opacity =
+                          "0";
+                      }
+                      squeezesam_stop();
+                    </script>
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://huggingface.co/papers/2312.06736">
+                    <papertitle>
+                      SqueezeSAM: User friendly mobile interactive segmentation
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://www.linkedin.com/in/balakrishnan-varadarajan-017b834/">Bala Varadarajan</a>,
+                    <a href="https://steelelab.me.uw.edu/team_member/bilge-soran/">Bilge Soran</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="http://www.forrestiandola.com/">Forrest Iandola</a>,
+                    <a href="https://pages.cs.wisc.edu/~yunyang/">Yunyang Xiong</a>,
+                    <a href="https://github.com/klightz/">Lemeng Wu</a>,
+                    <a href="https://sites.google.com/andrew.cmu.edu/zcckernel">Chenchen Zhu</a>,
+                    <a href="https://scholar.google.com/citations?user=AncHF6UAAAAJ&hl=en">Naveen Suda</a>,
+                    <a href="https://scholar.google.com/citations?user=F1mr9C0AAAAJ&hl=en">Raghuraman Krishnamoorthi</a>,
+                    <a href="https://v-chandra.github.io/">Vikas Chandra</a>
+                    <br />
+                    <em
+                      >arXiv, 2023</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/pdf/2312.06736">[Paper]</a>
+                    <a href="https://github.com/balakv504/squeeze_sam">[Code]</a>
+                    <p>
+                      SqueezeSAM is 62.5x faster and 31.6x smaller than its predecessor, making it a viable solution for mobile applications.
+                    </p>
+                  </td>
+                </tr>
                 <tr>
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
                     <img
@@ -439,11 +490,10 @@
                       Recognition (<strong>CVPR</strong>), 2023</em
                     >
                     <br />
-                    <a href="">[PDF]</a>
-                    <a href="">[Code]</a>
-                    <a href="">[Project Page]</a>
-                    <a href="">[Video]</a>
-                    <!-- <a href="./papers/2022_FDNeRF/zhang2022fdnerf.bib">[Bibtex]</a> -->
+                    <a href="https://arxiv.org/pdf/2304.10537.pdf">[PDF]</a>
+                    <a href="http://raywzy.com/NDRF/#demos">[WebGL Viewer]</a>
+                    <a href="http://raywzy.com/NDRF/">[Project Page]</a>
+                    <a href="https://www.youtube.com/watch?v=0xtbTClz7r0">[Video]</a>
                     <p>
                       Represent scenes as neural radiance features encoded on a two-layer <strong>duplex</strong> mesh, overcoming inaccuracies in 3D surface reconstruction.
                     </p>
