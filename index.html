@@ -50,7 +50,7 @@
                       I am a staff research scientist at
                       <a href="https://about.meta.com/realitylabs/"
                         >Meta Reality Labs</a
-                      >, where I work on 3D Computer Vision and Generative-AI research for AR and VR.
+                      >, specializing in generative AI for 3D content creation. My work focuses on building and deploying state-of-the-art pipelines for text-to-3D asset and world generation, avatar creation. I lead the development of several 3D GenAI projects powering Meta’s next-generation creator tools and XR platforms. I am passionate about driving technical innovation in generative AI, and shaping the direction of world modeling.
                     </p>
                     <p>
                       I did my Ph.D. at
@@ -97,26 +97,16 @@
             </table>
 
             <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
+              width="100%"
+              align="center"
+              border="0"
+              cellspacing="0"
+              cellpadding="20"
             >
               <tbody>
                 <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <heading>Research</heading>
-                    <p>
-                      My current research interests include Generative Model,
-                      Computational Photography, Temporal Modeling, and Novel
-                      View Synthesis. Below is a partial list of my papers.
-                    </p>
+                  <td width="100%" valign="middle">
+                    <heading>Industry Impact</heading>
                   </td>
                 </tr>
               </tbody>
@@ -132,6 +122,206 @@
               "
             >
               <tbody>
+                <tr>
+                  <td style="padding: 10px; width: 25%; vertical-align: top; text-align: center;">
+                    <a href="https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/" style="display: flex; flex-direction: column; align-items: center; height: 100%;">
+                      <div style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img
+                          src="images/worldgen.gif"
+                          alt="WorldGen"
+                          width="160"
+                          style="border-radius: 8px; max-height: 100px; object-fit: contain;"
+                        />
+                      </div>
+                      <span style="font-size: 0.9em; margin-top: 8px;">3D World Generation</span>
+                    </a>
+                  </td>
+                  <td style="padding: 10px; width: 25%; vertical-align: top; text-align: center;">
+                    <a href="https://developers.meta.com/horizon/blog/worlds/AssetGen2/" style="display: flex; flex-direction: column; align-items: center; height: 100%;">
+                      <div style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img
+                          src="images/assetgenv2.png"
+                          alt="AssetGen"
+                          width="160"
+                          style="border-radius: 8px; max-height: 100px; object-fit: contain;"
+                        />
+                      </div>
+                      <span style="font-size: 0.9em; margin-top: 8px;">3D Asset Generation</span>
+                    </a>
+                  </td>
+                  <td style="padding: 10px; width: 25%; vertical-align: top; text-align: center;">
+                    <a href="https://developers.meta.com/horizon/blog/worlds/new-tools-incentives-creators-mobile-worlds/" style="display: flex; flex-direction: column; align-items: center; height: 100%;">
+                      <div style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img
+                          src="images/texturegen_garments.png"
+                          alt="TextureGen"
+                          width="160"
+                          style="border-radius: 8px; max-height: 100px; object-fit: contain;"
+                        />
+                      </div>
+                      <span style="font-size: 0.9em; margin-top: 8px;">Texture Generation</span>
+                    </a>
+                  </td>
+                  <td style="padding: 10px; width: 25%; vertical-align: top; text-align: center;">
+                    <a href="https://developers.meta.com/horizon/blog/studio/meta-connect-2025-top-four-reasons-to-build-worlds-horizon/" style="display: flex; flex-direction: column; align-items: center; height: 100%;">
+                      <div style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img
+                          src="images/pta.gif"
+                          alt="Avatar"
+                          width="160"
+                          style="border-radius: 8px; max-height: 100px; object-fit: contain;"
+                        />
+                      </div>
+                      <span style="font-size: 0.9em; margin-top: 8px;">Avatar Generation</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table
+              style="
+                width: 100%;
+                border: 0px;
+                border-spacing: 0px;
+                border-collapse: separate;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="padding: 20px; width: 100%; vertical-align: middle"
+                  >
+                    <heading>Research</heading>
+                    <!-- <p>
+                      My current research interests include Generative Model,
+                      Computational Photography, Temporal Modeling, and Novel
+                      View Synthesis. Below is a partial list of my papers.
+                    </p> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              style="
+                width: 100%;
+                border: 0px;
+                border-spacing: 0px;
+                border-collapse: separate;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            >
+              <tbody>
+                <tr onmouseout="sb3d_stop()" onmouseover="sb3d_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="sb3d_image" style="opacity: 0">
+                        <img src="images/sb3d_1.gif" width="180" />
+                      </div>
+                      <img src="images/sb3d_0.png" width="180" />
+                    </div>
+                    <script type="text/javascript">
+                      function sb3d_start() {
+                        document.getElementById("sb3d_image").style.opacity =
+                          "1";
+                      }
+
+                      function sb3d_stop() {
+                        document.getElementById("sb3d_image").style.opacity =
+                          "0";
+                      }
+                      sb3d_stop();
+                    </script>
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://shoot-bounce-3d.github.io/">
+                    <papertitle>
+                      Shoot-Bounce-3D: Single-Shot Occlusion-Aware 3D from Lidar by Decomposing Two-Bounce Light
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://tzofi.github.io/">Tzofi Klinghoffer</a>,
+                    <a href="https://sidsoma.github.io/">Siddharth Somasundaram</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://ychfan.github.io/">Yuchen Fan</a>,
+                    <a href="https://richardt.name/">Christian Richardt</a>,
+                    <a href="https://akshatdave.github.io/">Akshat Dave</a>,
+                    <a href="https://www.media.mit.edu/people/raskar/overview/">Ramesh Raskar</a>,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>
+                    <br />
+                    <em
+                      >ACM SIGGRAPH Asia (<strong>SIGGRAPH Asia</strong>), 2025</em
+                    >
+                    <br />
+                    <a href="https://dl.acm.org/doi/full/10.1145/3757377.3763945">[Paper]</a>
+                    <a href="https://shoot-bounce-3d.github.io/assets/supplement.pdf">[Suppl]</a>
+                    <a href="https://github.com/facebookresearch/shoot-bounce-3d">[Code]</a>
+                    <a href="https://shoot-bounce-3d.github.io/">[Project Page]</a>
+                    <a href="https://ai.meta.com/datasets/meta-synthetic-environments-lidar-dataset">[Dataset]</a>
+                    <p>
+                      A single-shot method for occlusion-aware 3D reconstruction from lidar by decomposing two-bounce light. Meta Synthetic Environments Lidar Dataset is released.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <img
+                      src="images/worldgen.gif"
+                      alt="worldgen"
+                      width="180"
+                    />
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://arxiv.org/abs/2511.16825">
+                    <papertitle>
+                      WorldGen: From Text to Traversable and Interactive 3D Worlds
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <a href="https://wdilin.github.io/">Dilin Wang</a>,
+                    <a href="https://hyblue.github.io/">Hyunyoung Jung</a>,
+                    <a href="https://tmonnier.com/">Tom Monnier</a>,
+                    <a href="https://sites.google.com/site/kihyuksml/">Kihyuk Sohn</a>,
+                    <a href="https://zouchuhang.github.io/">Chuhang Zou</a>,
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://yuyingyeh.github.io/">Yu-Ying Yeh</a>,
+                    <a href="https://lsn33096.github.io/">Di Liu</a>,
+                    <a href="https://zixuanh.com/">Zixuan Huang</a>,
+                    <a href="https://scholar.google.com/citations?user=roRYYZoAAAAJ&hl=en">Thu Nguyen-Phuoc</a>,
+                    <a href="https://ychfan.github.io/">Yuchen Fan</a>,
+                    <a href="https://sergiuoprea.com/">Sergiu Oprea</a>,
+                    <a href="https://ziyanw1.github.io/">Ziyan Wang</a>,
+                    <a href="https://shapovalov.ro/">Roman Shapovalov</a>,
+                    <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>,
+                    <a href="http://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>,
+                    <a href="https://www.antoinetlc.com/">Antoine Toisoul</a>,
+                    <a href="https://sites.google.com/site/prithvirajdhar274/">Prithviraj Dhar</a>,
+                    <a href="https://scholar.google.com/citations?user=R-VLSLQAAAAJ&hl=zh-CN">Xiao Chu</a>,
+                    <a href="https://silent-chen.github.io/">Minghao Chen</a>,
+                    <a href="https://geonyeong-park.github.io/">Geon Yeong Park</a>,
+                    <a href="https://www.mahima-gupta.com/">Mahima Gupta</a>,
+                    <a href="https://www.linkedin.com/in/yassir-azziz-79038b107">Yassir Azziz</a>,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>,
+                    <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+                    <br />
+                    <em
+                      >arXiv, 2025</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/abs/2511.16825">[Paper]</a>
+                    <a href="https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/">[Blog]</a>
+                    <p>
+                      A system that enables the automatic creation of large-scale, interactive 3D worlds directly from text prompts, producing traversable, fully textured environments for game engines.
+                    </p>
+                  </td>
+                </tr>
+
                 <tr>
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
                     <img
@@ -152,7 +342,7 @@
                     <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>,
                     <a href="https://tuurstuyck.github.io/">Tuur Stuyck</a>,
                     <strong>Xiaoyu Xiang</strong>,
-                    Yilei Li, 
+                    Yilei Li,
                     <a href="https://www.linkedin.com/in/jovan-cmu/"
                       >Jovan Popovic</a
                     >,
@@ -223,7 +413,7 @@
                     <a href="https://youtu.be/tNdPlGUsCPw?si=gfEWcazENyMgvbyb">[Video]</a>
                     <a href="https://github.com/facebookresearch/PlatoNeRF/releases/tag/v0">[Dataset]</a>
                     <p>
-                      A method to recover scene geometry from a single view using two-bounce signals captured by a single-photon lidar. 
+                      A method to recover scene geometry from a single view using two-bounce signals captured by a single-photon lidar.
                     </p>
                   </td>
                 </tr>
@@ -260,7 +450,7 @@
                     <a href="https://pages.cs.wisc.edu/~yunyang/">Yunyang Xiong</a>,
                     <a href="https://www.linkedin.com/in/balakrishnan-varadarajan-017b834/">Bala Varadarajan*</a>,
                     <a href="https://github.com/klightz/">Lemeng Wu*</a>,
-                    <strong>Xiaoyu Xiang</strong>,
+                    <strong>Xiaoyu Xiang*</strong>,
                     <a href="https://fanyix.cs.ucdavis.edu/">Fanyi Xiao</a>,
                     <a href="https://sites.google.com/andrew.cmu.edu/zcckernel">Chenchen Zhu</a>,
                     <a href="https://sites.google.com/view/xiaoliangdai/">Xiaoliang Dai</a>,
@@ -362,7 +552,7 @@
                     <a href="https://github.com/raywzy/CAD">[Code]</a>
                     <a href="https://www.youtube.com/watch?v=6slL9YqW9JM">[Video]</a>
                     <p>
-                      A new approach for generating high-quality, photoreaslisitc and diverse 3D objects conditioned on a single image and a text prompt. 
+                      A new approach for generating high-quality, photoreaslisitc and diverse 3D objects conditioned on a single image and a text prompt.
                     </p>
                   </td>
                 </tr>
@@ -613,139 +803,134 @@
                     >
                     <!-- <a href="data/BarronPRL2009.bib">bibtex</a> -->
                     <p>
-                      A deformable attention network that adaptively captures and aggregates spatial and temporal contexts in dynamic video to enhance reconstruction. 
+                      A deformable attention network that adaptively captures and aggregates spatial and temporal contexts in dynamic video to enhance reconstruction.
                     </p>
                   </td>
                 </tr>
 
-                <!-- <tr
-                  onmouseout="zipnerf_stop()"
-                  onmouseover="zipnerf_start()"
-                  bgcolor="#ffffd0"
-                >
+                <tr>
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="zipnerf_image">
-                        <video width="100%" height="100%" muted autoplay loop>
-                          <source src="images/zipnerf.mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
-                      </div>
-                      <img src="images/zipnerf.jpg" width="160" />
-                    </div>
-                    <script type="text/javascript">
-                      function zipnerf_start() {
-                        document.getElementById("zipnerf_image").style.opacity =
-                          "1";
-                      }
-
-                      function zipnerf_stop() {
-                        document.getElementById("zipnerf_image").style.opacity =
-                          "0";
-                      }
-                      zipnerf_stop();
-                    </script>
+                    <img
+                      src="images/staa.png"
+                      alt="staa"
+                      width="180"
+                    />
                   </td>
-                  <td style="padding: 20px; width: 75%; vertical-align: middle">
-                    <a href="http://jonbarron.info/zipnerf">
-                      <papertitle
-                        >Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance
-                        Fields</papertitle
-                      >
+                  <td valign="middle" width="75%">
+                    <a href="https://arxiv.org/abs/2203.08140">
+                    <papertitle>
+                      Learning Spatio-Temporal Downsampling for Effective Video Upscaling
+                    </papertitle>
                     </a>
+
                     <br />
-                    <strong>Jonathan T. Barron</strong>,
-                    <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                    <a href="https://scholar.harvard.edu/dorverbin/home"
-                      >Dor Verbin</a
-                    >,
-                    <a href="https://pratulsrinivasan.github.io/"
-                      >Pratul Srinivasan</a
-                    >,
-                    <a href="https://phogzone.com/">Peter Hedman</a>
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://www.yapengtian.com/">Yapeng Tian</a>,
+                    <a href="https://apvijay.github.io/">Vijay Rengarajan</a>,
+                    Lucas Young,
+                    <a href="https://www.linkedin.com/in/bo-zhu/">Bo Zhu</a>,
+                    <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>
                     <br />
-                    <em>arXiv</em>, 2023
-                    <br />
-                    <a href="http://jonbarron.info/zipnerf">project page</a>
-                    /
-                    <a href="https://www.youtube.com/watch?v=xrrhynRzC8k"
-                      >video</a
+                    <em
+                      >European Conference on Computer Vision (<strong>ECCV</strong>), 2022</em
                     >
-                    /
-                    <a href="https://arxiv.org/abs/TODO">arXiv</a>
-                    <p></p>
+                    <br />
+                    <a href="https://arxiv.org/abs/2203.08140">[Paper]</a>
+                    <a href="data/1697_poster.pdf">[Poster]</a>
+                    <a href="https://www.youtube.com/watch?v=ll0hTgSqexI">[Video]</a>
                     <p>
-                      Combining mip-NeRF 360 and grid-based models like Instant
-                      NGP lets us reduce error rates by 8%&ndash;76% and
-                      accelerate training by 22x.
+                      A method to learn spatio-temporal downsampling for effective video upscaling.
                     </p>
                   </td>
-                </tr> -->
+                </tr>
 
-                <!-- <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+                <tr onmouseout="aoda_stop()" onmouseover="aoda_start()">
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
                     <div class="one">
-                      <div class="two" id="db3d_image">
-                        <video width="100%" height="100%" muted autoplay loop>
-                          <source src="images/owl.mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                      <div class="two" id="aoda_image" style="opacity: 0">
+                        <img src="images/a2s_s.gif" width="180" />
                       </div>
-                      <img src="images/owl.png" width="160" />
+                      <img src="images/a2s_a.gif" width="180" />
                     </div>
                     <script type="text/javascript">
-                      function db3d_start() {
-                        document.getElementById("db3d_image").style.opacity =
+                      function aoda_start() {
+                        document.getElementById("aoda_image").style.opacity =
                           "1";
                       }
 
-                      function db3d_stop() {
-                        document.getElementById("db3d_image").style.opacity =
+                      function aoda_stop() {
+                        document.getElementById("aoda_image").style.opacity =
                           "0";
                       }
-                      db3d_stop();
+                      aoda_stop();
                     </script>
                   </td>
-                  <td style="padding: 20px; width: 75%; vertical-align: middle">
-                    <a href="https://dreambooth3d.github.io/">
-                      <papertitle
-                        >DreamBooth3D: Subject-Driven Text-to-3D
-                        Generation</papertitle
-                      >
+                  <td valign="middle" width="75%">
+                    <a href="https://arxiv.org/abs/2104.05703">
+                    <papertitle>
+                      Adversarial Open Domain Adaptation for Sketch-to-Photo Synthesis
+                    </papertitle>
                     </a>
-                    <br />
 
-                    <a href="https://amitraj93.github.io/">Amit Raj</a>,
-                    <a href="https://www.linkedin.com/in/srinivas-kaza-64223b74"
-                      >Srinivas Kaza</a
-                    >, <a href="https://poolio.github.io/">Ben Poole</a>,
-                    <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a
-                    >,
-                    <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>,
-                    <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                    <a
-                      href="https://scholar.google.com/citations?user=I2qheksAAAAJ"
-                      >Shiran Zada</a
-                    >,
-                    <a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
-                    <a href="http://people.csail.mit.edu/mrub/"
-                      >Michael Rubinstein</a
-                    >, <strong>Jonathan T. Barron</strong>,
-                    <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>,
-                    <a href="https://varunjampani.github.io/">Varun Jampani</a>
                     <br />
-                    <em>arXiv</em>, 2023
+                    <strong>Xiaoyu Xiang</strong>,
+                    <a href="https://scholar.google.com/citations?user=PGtHUI0AAAAJ">Ding Liu</a>,
+                    <a href="https://scholar.google.com/citations?user=_MAKSLkAAAAJ">Xiao Yang</a>,
+                    Yiheng Zhu,
+                    <a href="https://xiaohuishen.github.io/">Xiaohui Shen</a>,
+                    <a href="https://engineering.purdue.edu/~allebach/">Jan P. Allebach</a>
                     <br />
-                    <a href="https://dreambooth3d.github.io/">project page</a> /
-                    <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
-                    <p></p>
+                    <em
+                      >IEEE/CVF Winter Conference on Applications of Computer Vision (<strong>WACV</strong>), 2022</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/abs/2104.05703">[Paper]</a>
+                    <a href="https://github.com/Mukosame/AODA">[Code]</a>
+                    <a href="https://github.com/Mukosame/Anime2Sketch">[Anime2Sketch]</a>
+                    <a href="https://www.youtube.com/watch?v=9PUO55s4kRQ">[Video]</a>
                     <p>
-                      Combining DreamBooth (personalized text-to-image) and
-                      DreamFusion (text-to-3D) yields high-quality,
-                      subject-specific 3D assets with text-driven modifications
+                      An adversarial open domain adaptation framework for sketch-to-photo synthesis.
                     </p>
                   </td>
-                </tr> -->
+                </tr>
+
+                <tr>
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <img
+                      src="images/zsm_demo.gif"
+                      alt="zooming slow-mo"
+                      width="180"
+                    />
+                  </td>
+                  <td valign="middle" width="75%">
+                    <a href="https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020">
+                    <papertitle>
+                      Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution
+                    </papertitle>
+                    </a>
+
+                    <br />
+                    <strong>Xiaoyu Xiang*</strong>,
+                    <a href="https://www.yapengtian.com/">Yapeng Tian*</a>,
+                    <a href="http://yulunzhang.com/">Yulun Zhang</a>,
+                    <a href="https://www.cs.rochester.edu/u/yfan/">Yun Fu</a>,
+                    <a href="https://engineering.purdue.edu/~allebach/">Jan P. Allebach</a>,
+                    <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+                    <br />
+                    <em
+                      >IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2020</em
+                    >
+                    <br />
+                    <a href="https://arxiv.org/abs/2002.11616">[Paper]</a>
+                    <a href="https://arxiv.org/abs/2104.07473">[Journal]</a>
+                    <a href="https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020">[Code]</a>
+                    <a href="https://www.youtube.com/watch?v=8mgD8JxBOus">[Demo]</a>
+                    <a href="https://www.youtube.com/watch?v=C1o85AXUNl8">[Teaser Video]</a>
+                    <p>
+                      A unified one-stage framework for space-time video super-resolution to directly synthesize an HR slow-motion video from an LR and LFR video.
+                    </p>
+                  </td>
+                </tr>
               </tbody>
             </table>
 
@@ -767,9 +952,15 @@
                       >, CVPR 2023, 2024
                     </p>
                     <p>
+                      <strong>Program Chair</strong>:
+                      <a href="https://www.imaging.org/IST/IST/Conferences/EI/EI2026_STD/EI2026.aspx"
+                        >Electronic Imaging Symposium</a
+                      >, 2025-2026
+                    </p>
+                    <p>
                       <strong>Conference Reviewer</strong>: ICLR 2021-2022, CVPR
                       2021-2024, ICCV 2021-2023, ECCV 2022-2024, NeurIPS 2021-2023,
-                      ICML 2022, SIGGRAPH 2024, SIGGRAPH-Asia 2024, WACV 2022-2025
+                      ICML 2022, SIGGRAPH 2024-2025, SIGGRAPH-Asia 2024, WACV 2022-2025
                     </p>
                     <p>
                       <strong>Journal Reviewer</strong>: T-PAMI, TNNLS, TMM,
